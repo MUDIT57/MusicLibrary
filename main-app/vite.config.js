@@ -9,7 +9,7 @@ export default defineConfig({
     federation({
       remotes: {
         // must match preview build URL of music-library
-        musicLibrary: "http://localhost:4173/assets/remoteEntry.js",
+        musicLibrary: "https://musiclib-demo.netlify.app/assets/remoteEntry.js",
       },
       shared: ['react', 'react-dom'],
     }),
