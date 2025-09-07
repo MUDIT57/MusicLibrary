@@ -1,32 +1,30 @@
-
 body {
-  display: block !important;
   margin: 0;
   padding: 0;
 }
 
 .container {
   min-height: 100vh;
-  background: linear-gradient(to bottom right, #0f172a, #6b21a8, #0f172a);
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  width: 100vw;
   position: fixed;
   top: 0;
   left: 0;
+  background: linear-gradient(to bottom right, #0f172a, #6b21a8, #0f172a);
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.1);
+  max-width: 24rem;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 1.5rem;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  padding: 2rem;
-  width: 100%;
-  max-width: 24rem;
 }
 
 .header {
@@ -37,87 +35,87 @@ body {
 .logo {
   width: 4rem;
   height: 4rem;
-  margin: 0 auto 1rem auto;
-  background: linear-gradient(to right, #3b82f6, #a855f7);
-  border-radius: 9999px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(to right, #3b82f6, #a855f7);
 }
 
 .title {
-  font-size: 1.875rem; /* 3xl */
+  margin: 0.5rem 0;
+  font-size: 1.875rem;
   font-weight: bold;
   color: #fff;
-  margin-bottom: 0.5rem;
 }
 
 .subtitle {
-  color: #d1d5db; /* gray-300 */
+  color: #d1d5db;
 }
 
-.button {
+.card .button {
   width: 100%;
+  margin-bottom: 1rem;
   padding: 0.75rem 1.5rem;
-  border-radius: 1rem;
+  font-size: 1rem;
   font-weight: 500;
+  border: none;
+  border-radius: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  transition: all 0.3s ease;
+  color: #fff;
   cursor: pointer;
-  color: white;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  border: none;
+  transition: transform 0.2s ease;
+}
+.button:hover {
+  transform: scale(1.02);
 }
 
 .userButton {
   background: linear-gradient(to right, #3b82f6, #2563eb);
-  box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.5);
+  box-shadow: 0 8px 15px rgba(59, 130, 246, 0.4);
 }
-
 .userButton:hover {
   background: linear-gradient(to right, #2563eb, #1d4ed8);
-  transform: scale(1.02);
 }
 
 .adminButton {
   background: linear-gradient(to right, #10b981, #059669);
-  box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.5);
+  box-shadow: 0 8px 15px rgba(16, 185, 129, 0.4);
 }
-
 .adminButton:hover {
   background: linear-gradient(to right, #059669, #047857);
-  transform: scale(1.02);
 }
 
 .demoBox {
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 1rem;
+  margin-top: 1rem;
   padding: 1rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .demoHeader {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   color: #9ca3af;
   font-weight: 500;
 }
 
 .demoText {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: #9ca3af;
 }
-
-.demoText span.user {
+.demoText .user {
   color: #3b82f6;
+  font-weight: 600;
 }
-
-.demoText span.admin {
+.demoText .admin {
   color: #10b981;
+  font-weight: 600;
 }

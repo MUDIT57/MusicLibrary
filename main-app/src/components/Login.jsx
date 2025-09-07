@@ -14,7 +14,7 @@ export default function Login({ onLogin }) {
           <p className="subtitle">Choose your access level</p>
         </div>
 
-        <div>
+        <div style={{width:"100%"}}>
           <button
             className="button userButton"
             onClick={() => {
@@ -36,21 +36,6 @@ export default function Login({ onLogin }) {
             <Shield size={20} />
             <span>Login as Admin</span>
           </button>
-        </div>
-
-        <div className="demoBox">
-          <div className="demoHeader">
-            <User size={16} />
-            <p>Demo Access</p>
-          </div>
-          <div className="demoText">
-            <p>
-              <span className="user">User:</span> Standard dashboard access
-            </p>
-            <p>
-              <span className="admin">Admin:</span> Full system privileges
-            </p>
-          </div>
         </div>
       </div>
     </div>
