@@ -1,0 +1,195 @@
+.container {
+  min-height: 100vh;
+  background-color: #f1f5f9;
+  padding: 1.5rem;
+}
+
+.wrapper {
+  /* width: 100%; */
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.headerIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #2563eb;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.headerTitle {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.headerRole {
+  color: #2563eb;
+  font-weight: 500;
+}
+
+/* Controls */
+.controls {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.controlsGrid {
+  display: grid;
+  gap: 1rem;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  padding-left: 2.5rem;
+  font-size: 1rem;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
+
+.select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Add Song button */
+.addSongBtn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #2563eb;
+  color: #fff;
+  border-radius: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  border: none;
+}
+
+.addSongBtn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Song List */
+.songGroup {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.groupHeader {
+  background-color: #f9fafb;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  font-weight: 600;
+  color: #111827;
+}
+
+.songItem {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  gap: 1rem;
+  transition: background-color 0.2s;
+}
+
+.songItem:hover {
+  background-color: #f3f4f6;
+}
+
+.songIndex {
+  width: 2rem;
+  height: 2rem;
+  background-color: #e5e7eb;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.songInfo h4 {
+  margin: 0;
+  font-weight: 500;
+  color: #111827;
+}
+
+.songInfo p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.songActions {
+  display: flex;
+  gap: 0.5rem;
+  opacity: 0;
+}
+
+.songItem:hover .songActions {
+  opacity: 1;
+}
+
+.actionBtn {
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  transition: all 0.2s;
+}
+
+.playBtn:hover {
+  color: #16a34a;
+  background-color: #dcfce7;
+}
+
+.removeBtn:hover {
+  color: #dc2626;
+  background-color: #fee2e2;
+}
+
+/* No songs found */
+.noSongs {
+  text-align: center;
+  padding: 3rem;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  color: #6b7280;
+}
+
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
