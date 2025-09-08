@@ -79,3 +79,13 @@ Based on the role:
 - **User**: Can view and filter songs.
 - **Admin**: Can view, filter, add, and delete songs.
 
+## Images
+
+### Main App
+![Screenshot 2025-09-08 085729](https://github.com/user-attachments/assets/2d34f22f-2f43-4a9d-a16e-94551c1fa3fe)
+
+### Login as User
+![Screenshot 2025-09-08 085845](https://github.com/user-attachments/assets/9f4f72f1-f6b0-44f5-b739-d7a430bbb799)
+
+### Login as Admin
+![Screenshot 2025-09-08 085920](https://github.com/user-attachments/assets/fec399b8-d557-4b7e-91d2-174af9c61139)
